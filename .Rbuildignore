@@ -11,3 +11,8 @@ pkgdown
 docs
 index.Rmd
 logo.*
+^DESCRIPTION\.bak$
+^\.github$
+^autoci\.yml$
+^autoci_pkgdown\.yml$
+^tic\.R$
