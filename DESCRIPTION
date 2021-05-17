@@ -2,37 +2,38 @@ Package: Rvision
 Type: Package
 Title: Basic Computer Vision Library
 Version: 0.3.5
-Authors@R: c(
-    person("Simon", "Garnier", email = "garnier@njit.edu", role = c("aut", "cre"),
-      comment = c(ORCID = "0000-0002-3886-3974")),
-    person("Muschelli", "John", email = "muschellij2@gmail.com", role = c("ctb", "cph"))
-  )
+Authors@R: c( person("Simon", "Garnier", email = "garnier@njit.edu",
+        role = c("aut", "cre"), comment = c(ORCID =
+        "0000-0002-3886-3974")), person("Muschelli", "John", email =
+        "muschellij2@gmail.com", role = c("ctb", "cph")) )
 Maintainer: Simon Garnier <garnier@njit.edu>
-Description: This package uses the OpenCV library to provide R users with methods 
-    to read and manipulate video and image files, as well as camera streams.
+Description: This package uses the OpenCV library to provide R users
+        with methods to read and manipulate video and image files, as
+        well as camera streams.
 License: GPL-3
 LazyData: TRUE
 NeedsCompilation: yes
-Imports:
-    Rcpp (>= 1.0.1),
-    RcppArmadillo (>= 0.9.400),
-    ROpenCVLite (>= 0.3.410),
-    methods,
-    pbapply,
-    stats,
-    graphics
+Imports: Rcpp (>= 1.0.1), RcppArmadillo (>= 0.9.400), ROpenCVLite (>=
+        0.3.410), methods, pbapply, stats, graphics
 LinkingTo: Rcpp, RcppArmadillo
 SystemRequirements: C++11
-RcppModules: class_Image, class_Video, class_Stream, class_VideoWriter, 
-    methods_Arithmetic, methods_Statistics, methods_Comparisons, methods_Logical, 
-    methods_OpticalFlow, methods_Blob, methods_Morphology, methods_Filters, 
-    methods_Display, methods_Draw, methods_Geometry, methods_Shape 
-Remotes: github::swarm-lab/ROpenCVLite@v0.3.410
+RcppModules: class_Image, class_Video, class_Stream, class_VideoWriter,
+        methods_Arithmetic, methods_Statistics, methods_Comparisons,
+        methods_Logical, methods_OpticalFlow, methods_Blob,
+        methods_Morphology, methods_Filters, methods_Display,
+        methods_Draw, methods_Geometry, methods_Shape
 RoxygenNote: 6.1.1
 Encoding: UTF-8
 Suggests: 
     knitr,
-    rmarkdown
+    rmarkdown,
+    covr,
+    testthat
 VignetteBuilder: knitr
-URL: https://swarm-lab.github.io/Rvision/, https://github.com/swarm-lab/Rvision
+URL: https://swarm-lab.github.io/Rvision/,
+        https://github.com/swarm-lab/Rvision
 BugReports: https://github.com/swarm-lab/Rvision/issues
+Repository: Neuroconductor
+Remotes:  
+    neuroconductor/ROpenCVLite@829cadd551428e905e2dbe55526d6ba30a0c73fa
+biocViews: 
